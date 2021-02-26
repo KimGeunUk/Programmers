@@ -24,5 +24,12 @@ def solution(strings, n):
 
     return answer
 
+def solution2(strings, n):
+    answer =[]
+
+    answer = sorted(strings, key = (lambda x: x[n] + x))
+
+    return answer
+
 print(solution(['sun', 'bed', 'car'],1))
 print(solution(['abce', 'abcd', 'cdx'],2))
